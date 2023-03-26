@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @EnableWebMvc
-@EntityScan(basePackages ="com.cerveja.model")
 @SpringBootApplication()  
 public class CervejariaApplication {
 
