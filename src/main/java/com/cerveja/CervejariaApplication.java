@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @EnableWebMvc
 @EntityScan(basePackages ="com.cerveja.model")
-@SpringBootApplication()
+@SpringBootApplication()  
 public class CervejariaApplication {
 
 	public static void main(String[] args) {

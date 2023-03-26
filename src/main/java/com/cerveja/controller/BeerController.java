@@ -24,6 +24,8 @@ public class BeerController {
 		return "Olá imbecil";
 	}
 	
+	
+	
 	@GetMapping(value="cerveja")
 	public ResponseEntity<List<Beer>> getAll(){
 		
