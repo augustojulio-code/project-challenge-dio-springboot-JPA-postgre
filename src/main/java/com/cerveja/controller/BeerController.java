@@ -13,12 +13,18 @@ import com.cerveja.model.Beer;
 import com.cerveja.repository.BeerRepository;
 
 @RestController
+@RequestMapping("/")
 public class BeerController {
 	
 	@Autowired
 	private BeerRepository repository;
 	
-	@GetMapping
+	@GetMapping("teste")
+	public String test() {
+		return "Olá imbecil";
+	}
+	
+	@GetMapping(value="cerveja")
 	public ResponseEntity<List<Beer>> getAll(){
 		
 		return new ResponseEntity<>(repository.findAll(),HttpStatus.OK);
