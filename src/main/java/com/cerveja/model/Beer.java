@@ -8,8 +8,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -21,19 +19,18 @@ public class Beer implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private UUID id;
-	@NotNull 
+//	@NotNull 
 	@Size(min=3, max =255)
 	private String name;
-	@NotNull
+//	@NotNull
 	@Size(min=3, max =255)
 	private String style;
-	@NotNull
+//	@NotNull
 	@Size(min=3, max =255)
 	private String producer;
-	@NotNull
+//	@NotNull
 	@Size(min=3, max =255)
 	private String country;
-	@NotNull
-	@Email
+//	@NotNull
 	private String producerEmail;
 }
